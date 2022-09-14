@@ -12,7 +12,7 @@ public class Datatype {
     double doubleDecimalnumber = 1.123123123123123;
 
     //Character
-    char alpha = "F";
+    char alpha = 'F';
 
     //True/False
     boolean hadLunch = true ;// had lunch?
@@ -27,4 +27,41 @@ public class Datatype {
     char animal;// ""
 
     boolean isClassTomorrow; // false
+
+    //Non-primitive data types
+    String word = "I'm a developer";
+
+    Character random = 'u';
+    Integer number = 5;
+    Float numberSecond = 1.23F;
+    Integer randomNumber; //Null
+
+    //Multi-decloration
+    int numberOne, numberTwo, numberThree;
+    String fruit = "apple", vegetable = "pumpkin", cties;
+
+    //Scope of class variables
+    public static String CAR = "Toyota";
+    public static String FOOD = "CAKE";
+
+    public static void main(String[] args) {
+        int k = 0;
+        Integer y = null;
+
+        System.out.println(k);
+        System.out.println(y);
+
+        String _color = "black";
+        int $hexaNumber = 0x2A;
+        float exam12_mark = 100.10f;
+
+        String className = "sda";
+
+        int a = 100;
+        int b = 5;
+        int c = a + b;
+
+        System.out.println(CAR);
+
+    }
 }
