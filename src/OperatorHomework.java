@@ -17,6 +17,10 @@ public class OperatorHomework {
         double z = 1.25;
         double w = -6.75;
 
+        //int k = 2;
+        //System.out.println(--k);
+        //System.out.println(-k);
+
         //double result3 = (w % z);
         //System.out.println(result3);
 
@@ -54,21 +58,11 @@ public class OperatorHomework {
         ( ( 0,25 / 1) - 1,25);
         ( ( 0,25 / 1) - 1,25) =  -1,0
 
-
-
-
          */
 
 
         String XX = ((a + (-b)) * c / ((d % (--e)) - x) > (y * (z % w )) ) ? "White" : "Black";
         System.out.println(XX);
-
-        int k = 2;
-        System.out.println(--k);
-
-        System.out.println(-k);
-
-
 
 
 
