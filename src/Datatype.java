@@ -49,6 +49,10 @@ public class Datatype {
         Integer y = null;
 
         System.out.println(k);
+
+        k = 10;
+        System.out.println(k);
+
         System.out.println(y);
 
         String _color = "black";
@@ -62,6 +66,8 @@ public class Datatype {
         int c = a + b;
 
         System.out.println(CAR);
+        System.out.println(FOOD);
+
 
     }
 }
