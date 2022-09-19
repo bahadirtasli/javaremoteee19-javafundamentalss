@@ -39,7 +39,7 @@ public class OperatorHomework {
 
         /*Steps
                                   ---PEMDAS---
-        	parentheses, exponents, multiplication, division, addition, subtraction
+        	parentheses, exponents, multiplication, division, percentage sign , addition, subtraction
 
         1.(-b) and (--e) ; java will start the process with these operations due to bracket's precedence.
         1.a( ( (a + -11) * c / ((d % 1111) - x) ) - (y * (z % w ) ) );
