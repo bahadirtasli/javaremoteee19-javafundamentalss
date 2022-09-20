@@ -4,7 +4,7 @@
  *
  * @author bahadir tasli
  */
-public class q {
+public class Samples {
 
     public static void main(String[] args) {
         String f = "fizz";
@@ -67,11 +67,10 @@ public class q {
             System.out.println("BUZZ");
         }
 
-        System.out.println(((j % 3 == 0) && ((j % 5) == 0)) ? "FIZZBUZZ" : (j % 3 == 0) ? "FIZZ" : (j % 5 == 0) ? "BUZZ" : "");
-
         //Solution 2
         //housework3 : one line solution for FIZZBUZZ
-        //System.out.println((((j % 3 == 0) && ((j % 5) == 0)) ? "FIZZBUZZ" : (((j % 3) == 0) ? "FIZZ": ((j % 5) == 0)) ? "BUZZ" : (j + ""));
+
+        System.out.println(((j % 3 == 0) && ((j % 5) == 0)) ? "FIZZBUZZ" : (j % 3 == 0) ? "FIZZ" : (j % 5 == 0) ? "BUZZ" : "");
 
     }
 }
