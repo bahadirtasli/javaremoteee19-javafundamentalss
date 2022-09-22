@@ -9,13 +9,13 @@ public class Homework4A {
         int[] b = {9, 27, 40, 20, 839, 11000};
         int result = b [0]; // 9
 
-        for (int x : b) {
-            if (x > result) {
-                result = x;
-            }
+       // for (int x : b) {
+         //   if (x > result) {
+           //     result = x;
+            //}
 
-        }
-        System.out.println(result);
+        //}
+        //System.out.println(result);
 
         int result2 = b [0] ;
         for (int x : b) {
