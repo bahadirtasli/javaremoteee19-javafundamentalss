@@ -14,7 +14,7 @@ public class Homework6 {
 
         for (int x : i) {
             if (x > largestelement) {
-                largestelement = x;
+                largestelement = x-1;
             }
         }
         System.out.println(largestelement);
