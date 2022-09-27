@@ -12,7 +12,7 @@ public class Homework5 {
 
         for (int x = 0; x < i.length; x++) {
             if (i[x] % 2 != 0) {
-                System.out.println(i[x]);
+                System.out.println("Odd numbers : "+ i[x]);
             }
         }
         int z = 0;
