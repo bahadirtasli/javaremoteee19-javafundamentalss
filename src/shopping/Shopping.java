@@ -123,7 +123,7 @@ public class Shopping {
                 cart = cartMenu(cart);
                 break;
             case 3:
-                System.out.println("Thanks for shopping!");
+                System.out.println("Thanks for shopping!   ");
                 break;
         }
     }
