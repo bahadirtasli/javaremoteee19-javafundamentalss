@@ -1,3 +1,6 @@
+import abstracts.Food;
+import abstracts.Fruit;
+import abstracts.Veggie;
 import exceptions.PersonNotFoundException;
 import models.Person;
 import services.PersonService;
@@ -75,6 +78,15 @@ public class Main {
             System.out.println(e.getLocalizedMessage());
             displayNumber();
         }
+
+        //Abstract class
+        Fruit fruit = new Fruit("Red");
+        fruit.eat();
+
+        Food food = new Veggie("Green");
+        //Veggie veggie = new Veggie("Green");
+        //Food food = veggie; // We can not instantiate (new Food()) but you can assing the child class to the abstract class.
+        food.eat();
 
     }
     private static void displayNumber() {
