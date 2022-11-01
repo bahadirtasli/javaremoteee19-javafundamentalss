@@ -1,5 +1,6 @@
 package services;
 
+import exceptions.PersonNotFoundException;
 import models.Person;
 /**
  * PersonService interface to handle Person related operations
@@ -27,6 +28,14 @@ public interface PersonService {
     String getPersonFullName(Person person);
 
     //static method is allowed
+
+    Person findPersonByFirstName(String firstName) throws PersonNotFoundException;
+
+    /**
+     * To find a person by firstname
+     *
+     * @return Person
+     */
 
     static int getAverageAge() {
         return AVERAGE_AGE;
