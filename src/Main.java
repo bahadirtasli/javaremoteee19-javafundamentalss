@@ -1,9 +1,7 @@
 import generics.*;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,5 +70,56 @@ public class Main {
             System.out.println(animal);
         }
 
+        //SET
+
+        Set<String> countrySet = new HashSet<>(); //Non-sorted, randomly stored
+        countrySet.add("Eesti");
+        countrySet.add("Saksamaa");
+        countrySet.add("Poola");
+        countrySet.add("Rootsi");
+        // countrySet.add("Eesti"); -> Duplicate not allowed!
+
+        for (String country : countrySet){
+            System.out.println(country);
+        }
+
+        System.out.println("Before sorting : " + countrySet);
+        TreeSet<String> countryTreeSet = new TreeSet(countrySet); // Stored as Sorted
+        System.out.println("After sorting : " + countryTreeSet);
+
+
+        //MAP
+        Map<String,String> fullName = new HashMap<>(); // Not stored as sorted
+        fullName.put("Bahadir", "Tasli");
+        fullName.put("Martti","Triksberg");
+        fullName.put("Marko", "Piir");
+        //fullName.put("Marko", "Ennuste"); - > not possible as one key assign to one value. duplicate key not allowed.
+        System.out.println(fullName);
+
+        System.out.println(fullName.get("Bahadir"));
+        System.out.println(fullName.remove("Marko"));
+        System.out.println(fullName);
+
+        Map<String, Integer > ageMap = new HashMap<>();
+        ageMap.put("Bahadir", 15);
+        ageMap.put("Marko", 15);
+
+        //Map of List
+        Map<String, List<String>> friendsMap = new HashMap<>();
+        List<String> bahadirFriendList = List.of("Tony","Mark","Antony");
+        List<String> mariaFriendList = List.of("Angelin,", "Aivi", "Eva");
+        friendsMap.put("Bahadir",bahadirFriendList);
+        friendsMap.put("Maria",mariaFriendList);
+
+        //Map of map
+        Map<String , Map<String, String>> detailsMap = new HashMap<>();
+        Map<String,String> bahadirInfoMap = new HashMap<>();
+        bahadirInfoMap.put("age","15");
+        bahadirInfoMap.put("birthPlace", "Turkey");
+        bahadirInfoMap.put("residence","Estonia");
+        bahadirInfoMap.put("phone","123456");
+        detailsMap.put("Bahadir",bahadirInfoMap);
+
     }
+
 }
