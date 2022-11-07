@@ -1,5 +1,6 @@
 import generics.*;
 
+import java.io.*;
 import java.math.BigDecimal;
 import java.util.*;
 
@@ -119,6 +120,36 @@ public class Main {
         bahadirInfoMap.put("residence","Estonia");
         bahadirInfoMap.put("phone","123456");
         detailsMap.put("Bahadir",bahadirInfoMap);
+
+        //I/O
+
+        File absolutFile = new File("C:\\Users\\Ceyda\\IdeaProjects\\java-advanced\\src\\resources\\myText.txt");
+        File relativeFile = new File("myText.txt");
+
+        try {
+            FileReader fileReader = new FileReader(absolutFile);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String fileLine; //To store the line of text from the file
+
+            while ((fileLine = bufferedReader.readLine()) != null) {
+                System.out.println(fileLine);
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            FileWriter fileWriter = new FileWriter(absolutFile, true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            String fileLine = "\n I can write an error-less Java code :D" ;
+            bufferedWriter.write(fileLine);
+            bufferedWriter.flush();
+            bufferedWriter.close();
+
+
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
